@@ -1,0 +1,85 @@
+from turtle import *
+
+
+def bigcircle():
+	goto(334, 0)
+	seth(90)
+	color("#6441A4")
+	begin_fill()
+	circle(331, 360)
+	end_fill()
+
+
+def big():
+	goto(173, 0)
+	color("black")
+	begin_fill()
+	seth(90)
+	fd(194)
+	lt(90)
+	fd(324)
+	lt(76)
+	fd(66)
+	seth(270)
+	fd(285)
+	seth(0)
+	fd(72)
+	seth(270)
+	fd(39)
+	seth(0)
+	fd(40)
+	lt(45)
+	fd(55)
+	seth(0)
+	fd(62)
+	lt(45)
+	fd(180)
+	goto(173, 0)
+	end_fill()
+
+
+def small():
+	goto(140, 0)
+	color("white")
+	begin_fill()
+	seth(90)
+	fd(161)
+	seth(180)
+	fd(259)
+	seth(270)
+	fd(227)
+	seth(0)
+	fd(71)
+	seth(270)
+	fd(48)
+	lt(135)
+	fd(68)
+	seth(0)
+	fd(86)
+	lt(45)
+	fd(76)
+	goto(140, 0)
+	end_fill()
+
+
+def eye(x0, y0, x=31, y=95):
+	color("white")
+	goto(x0, y0)
+	color("black")
+	begin_fill()
+	goto(x0, y0 + y)
+	goto(x0 - x, y0 + y)
+	goto(x0 - x, y0)
+	goto(x0, y0)
+	end_fill()
+
+
+bgcolor("black")
+ht()
+bigcircle()
+big()
+small()
+eye(86, 4)
+eye(0, 4)
+
+done()
